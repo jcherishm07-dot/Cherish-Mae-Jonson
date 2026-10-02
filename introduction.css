@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Poppins:wght@500&family=Quicksand:wght@500&display=swap');
+/*======= Main CSS =======*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  font-family: 'Karla', sans-serif;
+}
+
+/*======= Tab navigation bar =======*/
+
+/*======= Tab content =======*/
+
+/*======= Media queries (max-width: 1050px) =======*/

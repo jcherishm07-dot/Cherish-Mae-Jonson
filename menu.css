@@ -1,0 +1,131 @@
+/* ------------ GOOGLE FONTS ------------ */
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Poppins:wght@500&family=Quicksand:wght@500&display=swap');
+/* ------------ VARIABLES ------------ */
+:root {
+  /* FONT */
+  --font: 'Karla', sans-serif;
+  --bg-image: url('images/bg.jpg') !important;
+
+  /* COLORS */
+  --color: #C58940;
+}
+/* ------------ BASE ------------ */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+    position:relative !important;
+    width:100%
+}
+.container .heading{
+  display: block !important;
+  text-align: center;
+  color:#000;
+  font-size: 35px;
+  margin-top: 50px !important;
+  margin-bottom: 20px !important;
+  padding-top:40px !important;
+  padding-bottom:10px !important;
+  
+  line-height: 1.6 !important;
+  border-bottom: 3px solid #000;
+}
+.container h1{
+  color:#000;
+  text-align:center;
+  padding:15px;
+  font-size: 40px;
+  font-weight:bold;
+}
+body{
+  font-family: var(--font);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* ----------- SLIDER ------------ */
+.swiper{
+  width: 100%;
+}
+
+.swiper-wrapper{
+  width: 70%;
+  height: 35em;
+  display: flex;
+  align-items: center;
+}
+
+.card{
+  width: 20em;
+  height: 90%;
+  background-color: #fff;
+  border-radius: 2em;
+  box-shadow: 0 0 2em rgba(0, 0, 0, .2);
+  padding: 2em 1em;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  margin: 0 2em;
+}
+
+.swiper-slide:not(.swiper-slide-active){
+  filter: blur(1px);
+}
+
+.card_image{
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  border: 5px solid var(--color);
+  padding: 3px;
+  margin-bottom: 2em;
+}
+
+.card_image img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card_content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card_title{
+  font-size: 1.5rem;
+  font-weight: 600;
+  position: relative;
+  top: .2em;
+}
+
+.card_name{
+  color: var(--color);
+}
+
+.card_text{
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 1em 0;
+}
+
+.card_btn{
+  background-color: var(--color);
+  color: #fff;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+  padding: .5em;
+  border-radius: .5em;
+  margin-top: .5em;
+  cursor: pointer;
+}
